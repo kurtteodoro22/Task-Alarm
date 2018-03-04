@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity{
                         abrirFragment();
                         fragmentItens.load(edtAtividade.getText().toString());
                         edtAtividade.setText("");
-                        FragmentCerteza fragmentCerteza = new FragmentCerteza(MainActivity.this);
-                        fragmentCerteza.show();
+                        FragmentCerteza fragmentCerteza = new FragmentCerteza();
+                        fragmentCerteza.show(getFragmentManager(), "casinha");
                     }else{
                         fragmentItens.load(edtAtividade.getText().toString());
                         edtAtividade.setText("");
