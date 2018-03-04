@@ -13,11 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.zip.Inflater;
-
 public class MainActivity extends AppCompatActivity{
 
-    static boolean passarFragment = false;
+    public static boolean passarFragment = false;
     private Button btnAgendar;
     private EditText edtAtividade;
     private FragmentItens fragmentItens;
